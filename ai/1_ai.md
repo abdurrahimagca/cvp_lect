@@ -79,6 +79,27 @@ KNN uzaklık metriklerine dayandığından, farklı ölçeklerdeki özelliklerin
 
 $$x_{norm} = \frac{x - \mu}{\sigma}$$
 
+
+#### Z-Skor Normalizasyonu (Standart Skor)
+Bu formül, Z-skor normalizasyonu veya standartlaştırma olarak bilinen bir özellik ölçeklendirme tekniğini temsil eder.
+
+$$x_{norm} = \frac{x - \mu}{\sigma}$$
+
+Formüldeki değişkenler:
+
+$x$ = Orijinal veri noktası
+$\mu$ = Veri setinin ortalaması (mean)
+$\sigma$ = Veri setinin standart sapması
+$x_{norm}$ = Normalize edilmiş (standartlaştırılmış) veri noktası
+İşlem Adımları
+Her veri noktasından veri setinin ortalamasını çıkar ($x - \mu$)
+Sonucu standart sapmaya böl ($(x - \mu) / \sigma$)
+Sonuçlar ve Faydaları
+Normalleştirme sonucunda veri ortalaması 0, standart sapması 1 olur
+Veriler standart normal dağılıma (z-dağılımı) dönüştürülür
+Farklı ölçeklerdeki özellikler karşılaştırılabilir hale gelir
+Elde edilen değerler, orijinal değerin ortalamadan kaç standart sapma uzakta olduğunu gösterir
+
 **Özellik Ölçeklendirme Yöntemleri**:
 - **Standart Scaler**: Verileri ortalama=0, standart sapma=1 olacak şekilde dönüştürür
 - **Min-Max Scaler**: Verileri [0,1] aralığına ölçeklendirir
